@@ -12,11 +12,11 @@
 """
 if __name__ == '__main__':
 
-'''
+    '''
   Main method of application:                                                                                                                                                                                                            
 
   Parameters: None
 
   Returns: The logged in user on OOPR virtual machine.
 
-'''
+    '''
