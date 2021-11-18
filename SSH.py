@@ -20,3 +20,8 @@ if __name__ == '__main__':
   Returns: The logged in user on OOPR virtual machine.
 
     '''
+    import paramiko
+    import ssh_paramiko
+    import time
+    import re
+
