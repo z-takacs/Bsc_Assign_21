@@ -10,7 +10,6 @@
 # Desription: Connecting from host PC to OOPR VM in VMware WS with SSH through a Python script.
 #
 """
-from paramiko import SSHClient
 
 if __name__ == '__main__':
 
@@ -23,7 +22,6 @@ if __name__ == '__main__':
 
     '''
     import paramiko
-##    import sshclient
     import time
     import re
 
