@@ -23,15 +23,16 @@ if __name__ == '__main__':
 
     '''
     import paramiko
-    import ssh_paramiko
+##    import sshclient
     import time
     import re
 
 #Open SSH connection to the device
-def ssh_connection(ip):
+def ssh_connection (ip):
     try:
         username = "l00169723" #In an automation script read data from file
         password = "Zozik@11!" #never hard code
+
 
         print("Establishing a connection...")
         session = SSHClient = paramiko.SSHClient()
@@ -49,5 +50,4 @@ def ssh_connection(ip):
         session.close()
     except paramiko.AuthenticationException:
         print("Authentication Error")
-
-    ssh_connection("192.168.136.128") #ip address of my VM, adjust to suit
+ssh_connection("192.168.136.128") # The IP address of VM OOPR.
