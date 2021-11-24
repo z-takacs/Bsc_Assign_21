@@ -18,7 +18,7 @@ if __name__ == '__main__':
 
   Parameters: None
 
-  Returns: The logged in user on OOPR virtual machine.
+  Returns: Returns if the connection wa successful to the OOPR VM.
 
     '''
     import paramiko
