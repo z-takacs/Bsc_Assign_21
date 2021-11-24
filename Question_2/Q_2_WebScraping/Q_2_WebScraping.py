@@ -20,6 +20,6 @@ if __name__ == '__main__':
   Returns: None
 
     '''
-from bs4  import BeautifulSoup
+from bs4 import BeautifulSoup
 import requests
 
