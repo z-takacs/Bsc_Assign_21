@@ -7,7 +7,7 @@
 # Version   : v1.0.0
 # Licensing : (C) 2021 Zoltan Takacs, LYIT
 #             Available under GNU Public License (GPL)
-# Desription: Web Scraping the Apache webpage from the OOPR VM.
+# Description: Web Scraping the Apache webpage from the OOPR VM.
 #
 """
 if __name__ == '__main__':
