@@ -23,3 +23,9 @@ if __name__ == '__main__':
 from bs4 import BeautifulSoup
 import requests
 
+url = "http://192.168.136.128/"
+
+result = requests.get(url)
+doc= BeautifulSoup (result.text, "html.parser")
+print (doc.prettify())
+
