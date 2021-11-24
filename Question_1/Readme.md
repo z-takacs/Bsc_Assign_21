@@ -4,4 +4,4 @@ Question 1: Apache2 Install<br>
 
 2.: Created rules for Apache2 on the FW to allow communication.<br>
 
-3.:  Testing service status locally an through web browser from host PC.<br>
+3.:  Tested service status locally an through web browser from host PC.<br>
