@@ -27,13 +27,13 @@ from bs4 import BeautifulSoup
 url = "http://192.168.136.128/"
 
 result = requests.get(url)
-doc= BeautifulSoup (result.text, "html.parser")
+doc= BeautifulSoup (result.text, "lxml")
 print (doc.prettify())
 
-print("================================================================")
-print("                        Scraping Ends")
-print("================================================================")
+print(50*"=")
+print(20*" " + "Scraping Ends")
+print(50*"=")
 
-
-print("Q.2.2: The word Apache2 appears {} times in the Apache2 landing page.")
-
+with open("results.text","w") as f:
+    f.write(result.text)
+    f.close()
