@@ -34,17 +34,19 @@ with open("results.text", "w") as f:
 
 ################################
 print(50 * "=")
-print(20*(" ")+"Questions" )
+print(20*" "+"Questions")
 print(50 * "=")
 
+file = open("results.text", "r")
+data = file.read()
 print("Q.2.1:")
-
 ################################
-file = open("results.text" , "r")
+file = open("results.text", "r")
 data = file.read()
 Apache2 = data.count("Apache2")
 print("Q.2.2: The word Apache2 appears {} times in the Apache2 landing page.".format(Apache2))
-
 ################################
-print("Q.2.3:")
-
+file = open("results.text","r")
+data = file.read()
+words = data.split()
+print("Q.2.3: The number of words in this document is:",len(words))
