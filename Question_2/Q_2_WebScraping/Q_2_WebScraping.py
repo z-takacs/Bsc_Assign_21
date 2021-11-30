@@ -21,37 +21,39 @@ if __name__ == '__main__':
     '''
 import requests
 from bs4 import BeautifulSoup
-url = "http://192.168.136.128/"
+
+url = "http://192.168.136.128/"  # OOPR VM IP address.
 
 result = requests.get(url)
-doc = BeautifulSoup(result.text, "lxml")
-print(doc.prettify())
+doc = BeautifulSoup(result.text, "lxml")   # Using the lxml parser.
+print(doc.prettify())  #
 
 
-with open("results.text", "w") as f:
+with open("results.text", "w") as f:  # text file with the scrapings created and closed/saved.
     f.write(result.text)
     f.close()
 
-################################
+  # Addtional Questions
 print(50 * "=")
 print(20*" "+"Questions")
 print(50 * "=")
 print(50 * "=")
 
-file = open("results.text", "r")
+
+file = open("results.text", "r")  # The results.text file will be opened with reading permission.
 data = file.read()
 
 print("Q.2.1: What are the headings?")
 print("Answer:")
 print("="*50)
 
-file = open("results.text", "r")
+file = open("results.text", "r")  # The results.text file will be opened with reading permission.
 Apache2 = data.count("Apache2")
 print("Q.2.2:  How many times does the word Apahce2 appear?")
 print("Answer: The word Apache2 appears {} times in the Apache2 landing page.".format(Apache2))
 print("="*50)
 
-file = open("results.text", "r")
+file = open("results.text", "r")  # The results.text file will be opened with reading permission.
 data = file.read()
 words = data.split()
 print("Q.2.3:  How many words this document consist of?")
