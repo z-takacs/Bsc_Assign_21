@@ -12,31 +12,32 @@
 """
 if __name__ == '__main__':
 
-'''
+    '''
   Main method of application:
 
   Parameters: None
 
   Returns: Returns result of connection test.
 
-'''
+    '''
 import paramiko
 import time
 import re
 
-#Open SSH connection to the device
-def ssh_connection (ip):
-    try:
-        username = "l00169723" #In an automation script read data from file
-        password = "XXXXX" # PW is masked
+# Open SSH connection to the device
 
+
+def ssh_connection(ip):
+    try:
+        username = "l00169723"  # In an automation script read data from file
+        password = "XXXXXXXXX"  # PW is masked
 
         print("Establishing a connection...")
         session = SSHClient = paramiko.SSHClient()
         session.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         session.connect(ip.rstrip("\n"), username=username, password=password)
         connection = session.invoke_shell()
-        connection.send("ls > dir_contents.txt\n") #unix command to list  directory contents and save to file
+        connection.send("ls > dir_contents.txt\n")  # Unix command to list  directory contents and save to file
         time.sleep(1)
 
         vm_output = connection.recv(65535)
@@ -47,4 +48,6 @@ def ssh_connection (ip):
         session.close()
     except paramiko.AuthenticationException:
         print("Authentication Error")
-ssh_connection("192.168.136.128") # The IP address of VM OOPR.
+
+
+ssh_connection("192.168.136.128")  # The IP address of VM OOPR.
