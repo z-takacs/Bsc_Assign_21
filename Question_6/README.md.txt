@@ -21,7 +21,7 @@ Fig 2.6: Output of "terraform graph" of the latest i-094aa05bdcb352fd2 instance.
 Fig 2.7: Updated Q_6_TF.tf file.<br>
 Fig 2.8: Updated variables.tf file.<br>
 
-Outputs.tf and Displaying IP<br>
+Outputs.tf and Displaying IP.<br>
 Fig 3.1: Created outs.tf file.<br>
 Fig 3.2: Refreshed config, output is displayed at the last step after applied the new config.<br>
 Fig 3.3: Running terraform output command on local VM.<br>
